@@ -1,0 +1,195 @@
+* {
+    margin: -5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed, scroll;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: anchor-center;
+    z-index: 3;
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    user-select: none;
+
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover {
+    background: white;
+    color: cadetblue;
+
+}
+
+ .contForm {
+    padding: 23px;
+    position: relative;
+    top: 123px;
+    width: 483px;
+    height: 1697px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 136px;
+    padding-block-start: 86px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box-2 {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin: 30px 0;
+    top: 41px;
+    font-size: 1.2em;
+    right: 21px;
+}
+
+
+.input-box input {
+    width: 50%;
+    height: 140%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.form-box-login {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 55px;
+}
+
+
+.login-register {
+    text-align: center;
+}
+
+.remember-forgot {
+    text-align: center;
+}
+
+footer {
+    padding: 1px;
+    position: absolute;
+    top: 1826px;
+    width: 63px;
+    height: 57px;
+    text-align: center;
+}
+
+.Help {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.register-link {
+    color:rgb(0, 76, 147);
+    text-decoration: none;
+}
+
+.form-box-login {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+input {
+    color: rgb(255, 255, 255);
+}
+
+.no-scroll {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
